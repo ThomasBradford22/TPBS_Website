@@ -1,0 +1,44 @@
+{
+  "name": "tpbs_website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasBradford22/TPBS_Website.git"
+  },
+  "keywords": [
+    "tech",
+    "portfolio",
+    "club",
+    "uw-madison"
+  ],
+  "author": "Tech Portfolio Builders Club",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThomasBradford22/TPBS_Website/issues"
+  },
+  "homepage": "https://github.com/ThomasBradford22/TPBS_Website#readme",
+  "description": "Official website for the Tech Portfolio Builders Club at UW Madison",
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "^15.5.3",
+    "lucide-react": "^0.544.0",
+    "next": "^15.5.3",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  }
+}
