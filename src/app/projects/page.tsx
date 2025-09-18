@@ -95,12 +95,7 @@ const projects = [
 ]
 
 const projectCategories = [
-  { name: 'All Projects', count: projects.length, active: true },
-  { name: 'Active', count: projects.filter(p => p.status === 'Active').length, active: false },
-  { name: 'Completed', count: projects.filter(p => p.status === 'Completed').length, active: false },
-  { name: 'Web Apps', count: projects.filter(p => p.technologies.includes('React') || p.technologies.includes('Next.js')).length, active: false },
-  { name: 'Mobile', count: 0, active: false },
-  { name: 'Open Source', count: projects.filter(p => p.githubUrl).length, active: false }
+  { name: 'All Projects', count: projects.length, active: true }
 ]
 
 export default function ProjectsPage() {
@@ -111,11 +106,11 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Our Projects
+              Featured Project
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Explore the impressive portfolio projects built by our members. Each project showcases 
-              real-world skills and technologies used in the tech industry.
+              For now we're highlighting one project from our portfolio. More projects coming soon —
+              feel free to check back later or contribute your own.
             </p>
           </div>
         </div>
@@ -144,8 +139,8 @@ export default function ProjectsPage() {
       {/* Projects Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+            {projects.slice(0, 1).map((project) => (
               <div key={project.id} className="card hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 {/* Project Image */}
                 <div className="aspect-video bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 rounded-lg mb-4 flex items-center justify-center">
